@@ -7,7 +7,7 @@ This is a simple Wordpress Theme to learn programming lesson in a nutshell
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -15,7 +15,7 @@ What things you need to install the system
 
 ```
 PHP 5.3.7 and higher
-MySQL 8.0
+MySQL 8.0+
 ```
 
 ### Installing
@@ -28,7 +28,7 @@ Clone or download the repository.
 ```
 and
 ```
-Setup the database and create your login details
+Setup the database and create your wordpress database
 ```
 
 ## Built With
@@ -44,14 +44,16 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-Kirk Anthony Mendoza - [@RonCajan](https://twitter.com/RonCajan) - cajanr02@gmail.com
+Kirk Anthony Mendoza - [@hi_im_kirk](https://twitter.com/hi_im_kirk)
+You can just email me for system just message me in kirkmendoza9@gmail.com
 
-Project Link: [https://github.com/ronilcajan/PointOfSale](https://github.com/ronilcajan/PointOfSale)
+Project Link: [https://github.com/mickey014/leaguecoders](https://github.com/mickey014/leaguecoders)
 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* My family and my love
 * Inspiration
-* etc
+* Motivation
+* HardWorking
 
