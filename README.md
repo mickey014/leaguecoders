@@ -33,9 +33,10 @@ Setup the database and create your own wordpress database
 
 ## Built With
 
-* [PHP](https://codeigniter.com/) - Backend Language used
+* [PHP](https://www.php.net/) - Backend Language used
+* [Wordpress](https://wordpress.com/) - CMS used
 * [Jquery](https://jquery.com/) - JS library used
-* [Bootstrap](https://Bootstrap.com/) - Css Framework used
+* [Bootstrap](https://bootstrap.com/) - Css Framework used
 * [Fontawesome](https://fontawesome.com/) - Icons use
 
 ## License
