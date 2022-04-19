@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "settings": {
+    "typography": {
+			"fontSize":"1.5rem",
+      "lineHeight":"1.5"
+		},
+    "layout": {
+			"contentSize": "840px",
+			"wideSize": "1100px"
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"blocks": {
+			"core/group": {
+				"spacing": {
+					"padding": false
+				}
+			},
+			"core/site-title": {
+				"spacing": {
+					"padding": true,
+					"margin": false
+				}
+			}
+		}	
+  }
+}

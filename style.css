@@ -1,0 +1,768 @@
+/*
+Theme Name: LeagueCoders
+Author: LeagueCoders
+Description: Our theme is about programming lessons to help students and developers who want to read a lesson here, our lesson consists only about basic programming
+Tags: html, css, bootstrap, javascript, php, web development, basic programming
+Version: 1.0
+License: All rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.
+
+You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
+
+Conveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: LeagueCoders
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+
+:root {
+  --dark-color: #111;
+  --semi-dark-color: #222;
+  --light-color: #eee;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light-color);
+  font-family: 'Quicksand', sans-serif;
+}
+
+header + .navbar {
+  display: none;
+}
+
+/* Not Found */
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0px auto 50px;
+}
+
+.notfound .notfound-404>div:first-child {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffa200;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 5px dashed #000;
+  border-radius: 5px;
+}
+
+.notfound .notfound-404>div:first-child:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 5px;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Cabin', sans-serif;
+  color: #000;
+  font-weight: 700;
+  margin: 0;
+  font-size: 90px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.notfound h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.notfound p {
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.notfound a {
+  font-family: 'Cabin', sans-serif;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #8f8f8f;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: #2c2c2c;
+}
+
+
+/* Navbar above */
+.navbar-above {
+  position: relative;
+  background: var(--dark-color);
+  padding: 1rem;
+}
+/* Logo */
+.custom-logo {
+  height: 40px;
+  width: 80px;
+}
+
+/* Search Button */
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+  width: 100%; 
+  position: relative;
+}
+
+.searchTerm {
+  width: 80%;
+  border: 1px solid var(--semi-dark-color);
+  border-right: none;
+  padding: 1.5rem;
+  padding-right: 2rem;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchTerm:focus{
+  color: var(--semi-dark-color);
+}
+
+.searchButton { 
+  text-align: center;
+  color: var(--light-color);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: .4rem 1rem;
+  position: absolute;
+  border:0;
+  outline: 0;
+}
+
+.searchButton .fa-search {
+  color: var(--semi-dark-color);
+}
+
+.searchButton:disabled,
+.searchButton[disabled]{
+  background-color: #f1f1f1;
+  color: var(--light-color);
+}
+
+/* Navbar Lesson */
+.leaguecoder-navbar {
+  background: var(--semi-dark-color);
+  margin: 0;
+  padding: 0;
+}
+
+#lc_home_url.active {
+  background-color: rgb(55, 107, 78);
+}
+
+  
+.leaguecoder-navbar .container-fluid {
+  padding:0;
+}
+
+.leaguecoder-menu li.active {
+  background-color: rgb(55, 107, 78);
+}
+
+.leaguecoder-navbar .leaguecoder-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.leaguecoder-navbar ul {
+  display: flex;
+  list-style: none;
+  overflow: hidden;
+}
+
+.leaguecoder-navbar li,
+.leaguecoder-navbar li a {
+  display: inline-block;
+}
+
+.leaguecoder-navbar li:not(:last-child){
+  padding-right: 0;
+} 
+
+.leaguecoder-navbar li a,
+#lc_home_url {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--light-color);
+  text-transform: uppercase;
+  padding: 14px 16px;
+}
+.leaguecoder-navbar li a:hover,
+#lc_home_url:hover {
+  background: rgb(55, 107, 78);
+}
+
+/* Section */
+.section {
+  padding: 8rem 10rem;
+  text-align: center;
+}
+
+.page-wrapper .page-title{
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.page-wrapper .page-content {
+  font-size: 5rem;
+}
+
+.page-wrapper .page-content + p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.page-wrapper .lesg-btn {
+  text-decoration: none;
+  width: 300px;
+  background-color: var(--semi-dark-color);
+  padding: 1.2rem;
+  color: var(--light-color);
+  border-radius: 20rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.page-wrapper .lesg-btn:hover {
+  opacity: 0.9;
+}
+
+.section-css3, .section-javascript {
+  background-color: var(--dark-color);
+}
+
+.section-html5 .page-content {
+  color: #e34f26;
+}
+
+.section-css3 .page-title,
+.section-javascript .page-title {
+  color: var(--light-color);
+}
+
+.section-css3 .page-content {
+  color: #0074D9;
+}
+
+.section-css3 .page-content + p,
+.section-javascript .page-content + p {
+  color: var(--light-color);
+}
+
+.section-bootstrap .page-content {
+  color: #673F98;
+}
+
+.section-javascript .page-content {
+  color: #e9d44d;
+}
+
+.section-php .page-content {
+  color: #474A8A;
+}
+
+#burger-menu, .close-icon {
+  display: none;
+}
+
+.lesson-sidebar-container,
+#css3-sidebar-container,
+#boot-sidebar-container,
+#js-sidebar-container,
+#php-sidebar-container {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+
+.sidebar-link-lesson-active,
+.sidebar-link-lesson {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: .7rem;
+  color: var(--semi-dark-color);
+  text-transform: uppercase;
+}
+
+.sidebar-link-lesson:hover,
+.sidebar-link-lesson-active:hover,
+.sidebar-link-lesson-active {
+  color: rgb(55, 107, 78);
+}
+
+/* search */
+strong.search-excerpt { 
+  background-color: var(--semi-dark-color);
+  padding: 0 .5rem;
+  color: var(--light-color);
+}
+
+h2.search-heading {
+  text-align: center;
+}
+
+.search-ul .folder_dir,
+.search-ul p small
+ {
+  color: #000;
+  font-size: .9rem;
+}
+
+.search-ul p small {
+  color: #4D5156;
+}
+
+.search-ul li p{
+  margin-bottom: 0;
+}
+
+.search ul li .site_name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #4B41BD;
+}
+
+.search ul li .site_name:hover {
+  text-decoration: underline;
+}
+
+.h3_sidebar {
+  text-align:center;
+  border-left:7px solid rgb(55, 107, 78);
+  background:#f6f9ee;
+  padding:10px;
+}
+
+.search_feedback {
+  padding: 1rem;
+  font-size: .9rem;
+}
+
+/* Latest Updates */
+.ul_latest_updates {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.ul_latest_updates .latest_updates_link {
+  color: rgb(55, 107, 78);
+  text-decoration: none;
+}
+
+.ul_latest_updates .latest_updates_link:hover {
+  text-decoration: underline;
+  color: var(--semi-dark-color);
+}
+
+/* Topic */
+.next-topic{
+  color: #fff; 
+  background: rgb(55, 107, 78);
+  border-radius: 50px 0 0 50px;
+  padding:1rem; 
+  float:right;
+}
+
+.next-topic .next {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+
+.next-topic .next:hover {
+  opacity: .8;
+}
+
+/* Pagination */
+/* Top Pagination */
+.top-pagination {
+  margin-top: 2rem;
+}
+
+.list-pag {
+  list-style-type: none;
+}
+
+.top-pagination .list-pag .next,
+.top-pagination .list-pag .prev {
+  text-decoration: none;
+  float: right;
+  background-color: rgb(55, 107, 78);
+  padding: .5rem 1.5rem;
+  border-radius: 20px;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  letter-spacing: 1px;
+}
+
+.top-pagination .list-pag .next {
+  margin-left: .5rem;
+}
+
+.top-pagination .list-pag a:hover {
+  -moz-box-shadow: 6px 6px 4px #d4d4d4;
+  -webkit-box-shadow: 6px 6px 4px #d4d4d4;
+  box-shadow: 6px 6px 4px #d4d4d4;
+  background-color: rgb(56, 168, 105);
+}
+
+/* Bottom Pagination */
+.bottom-pagination  {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.bottom-pagination .list-pag .next,
+.bottom-pagination .list-pag .prev {
+  text-decoration: none;
+  background-color: rgb(55, 107, 78);
+  padding: .5rem 1.5rem;
+  border-radius: 20px;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  letter-spacing: 1px;
+}
+
+.bottom-pagination .list-pag .next {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.bottom-pagination .list-pag .prev {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.scroll-top {
+  position: sticky;
+  bottom: 110px;
+  margin-left: .8rem;
+  z-index: 2;
+}
+
+.scroll-top .scroll-top-btn {
+  background-color: rgb(55, 107, 78);
+  padding: .8rem 1.2rem;
+  border-radius: 50%;
+  color: var(--light-color);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 769px) {
+
+  .wrap{
+    width: 40%;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 1px solid var(--semi-dark-color);
+    border-right: none;
+    padding: 1.5rem;
+    padding-right: 2rem;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: .8rem;
+  }
+  
+  .searchTerm:focus{
+    color: var(--semi-dark-color);
+  }
+  
+  .searchButton { 
+    text-align: center;
+    color: var(--light-color);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: .4rem 1rem;
+    position: absolute;
+    border:0;
+    outline: 0;
+  }
+  
+  .searchButton .fa-search {
+    color: var(--semi-dark-color);
+    font-size: 1rem;
+  }
+
+  #lc_home_url {
+    padding-bottom: 0;
+  }
+
+  .leaguecoder-navbar {
+    overflow: hidden;
+  }
+
+  .leaguecoder-navbar li a {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 5rem 4rem;
+  }
+
+  .page-wrapper h2.page-title,
+  .page-wrapper .page-content {
+    font-size: 3rem;
+  }
+
+  .page-wrapper .page-content + p {
+    font-size: 1rem;
+  }
+
+  .page-wrapper .lesg-btn {
+    width: 200px;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .right-sidebar {
+    margin-top: 2rem;
+  }
+
+  .lesson-sidebar-container li a {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .search-heading {
+    font-size: 1.1rem;
+  }
+
+  .search-ul .folder_dir,
+  .search-ul p small {
+    font-size: .8rem;
+  }
+
+  .search ul li .site_name {
+    font-size: 1.2rem;
+  }
+
+  .search_res {
+    padding: 1rem !important;
+  }
+
+  .h3_sidebar {
+    font-size: 1rem;
+  }
+
+  .search_feedback {
+    font-size: .8rem;
+  }
+
+  .ul_latest_updates li {
+    font-size: .8rem;
+  }
+
+  #notfound {
+    height: 80vh;
+  }
+  
+  #notfound .notfound {
+    top: 50%;
+  }
+
+  .notfound h2 {
+    font-size: 1.2rem;
+  }
+
+  .notfound p {
+    font-size: .8rem;
+  }
+
+  .search_res .mt-5 {
+    margin-top: 1rem !important;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+
+  .custom-logo {
+    height: 30px;
+    width: 60px;
+  }
+
+  .wrap {
+    width: 45%;
+  }
+
+  .searchTerm {
+    padding: 1rem;
+    padding-right: 2rem;
+    height: 20px;
+  }
+
+  .searchButton {
+    padding: 0;
+    padding: 0 .5rem;
+    font-size: 1rem;
+    height: 33px;
+  }
+
+  .leaguecoder-navbar li a,
+  #lc_home_url {
+    font-size: .95rem;
+  }
+
+  #notfound {
+    height: 70vh;
+  }
+  
+  #notfound .notfound {
+    top: 50%;
+  }
+
+  .notfound .notfound-404 {
+    height: 90px;
+    width: 90px;
+  }
+
+  .notfound .notfound-404 h1 {
+    font-size: 2rem;
+  }
+
+  .notfound h2 {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .page-wrapper h2.page-title, .page-wrapper .page-content {
+    font-size: 2rem;
+  }
+  
+  .page-wrapper .page-content + p {
+    font-size: .8rem;
+  }
+
+  .page-wrapper .lesg-btn {
+    width: 150px;
+    padding: .4rem;
+    font-size: .8rem;
+  }
+
+  #burger-menu {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+  }
+
+  .close-icon {
+    display: inline-block;
+  }
+
+  .lesson-sidebar-container {
+    background-color: var(--light-color);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    padding: .5rem;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    transition: .3s all linear;
+    transform: translateX(-100%);
+  }
+
+  .lesson-active {
+    transform: translateX(0);
+  }
+
+  .close-icon {
+    float: right;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+}
