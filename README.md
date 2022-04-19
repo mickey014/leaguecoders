@@ -36,7 +36,7 @@ Setup the database and create your login details
 
 * [PHP](https://codeigniter.com/) - Backend Language used
 * [Jquery](https://jquery.com/) - JS library used
-* * [Bootstrap](https://Bootstrap.com/) - Css Framework used
+* [Bootstrap](https://Bootstrap.com/) - Css Framework used
 * [Fontawesome](https://fontawesome.com/) - Icons use
 
 ## License
