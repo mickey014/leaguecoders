@@ -3,7 +3,7 @@
 This is a simple Wordpress Theme to learn programming lesson in a nutshell
 
 ## Demo Picture Only
-<img src="123.png" height="200" width="400">&nbsp;&nbsp;<img src="404.png" height="200" width="400">&nbsp;&nbsp;<img src="resu.png" height="200" width="400">&nbsp;&nbsp;<img src="wer.png" height="200" width="400">
+<img src="123.png" height="200" width="400">&nbsp;&nbsp;<img src="wer.png" height="200" width="400">&nbsp;&nbsp;<img src="resu.png" height="200" width="400">&nbsp;&nbsp;<img src="404.png" height="200" width="400">
 
 ## Getting Started
 
