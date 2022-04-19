@@ -44,7 +44,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-Kirk Anthony Mendoza - [@hi_im_kirk](https://twitter.com/hi_im_kirk)
+Kirk Anthony Mendoza - [@hi_im_kirk](https://twitter.com/hi_im_kirk)-
 You can just email me for system just message me in kirkmendoza9@gmail.com
 
 Project Link: [https://github.com/mickey014/leaguecoders](https://github.com/mickey014/leaguecoders)
