@@ -36,7 +36,7 @@ Setup the database and create your login details
 
 * [PHP](https://codeigniter.com/) - Backend Language used
 * [Jquery](https://jquery.com/) - JS library used
-* [DataTables](https://datatables.net/) - Table used
+* * [Bootstrap](https://Bootstrap.com/) - Css Framework used
 * [Fontawesome](https://fontawesome.com/) - Icons use
 
 ## License
@@ -45,7 +45,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-Ronil Cajan - [@RonCajan](https://twitter.com/RonCajan) - cajanr02@gmail.com
+Kirk Anthony Mendoza - [@RonCajan](https://twitter.com/RonCajan) - cajanr02@gmail.com
 
 Project Link: [https://github.com/ronilcajan/PointOfSale](https://github.com/ronilcajan/PointOfSale)
 
