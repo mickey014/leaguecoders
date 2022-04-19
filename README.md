@@ -28,7 +28,7 @@ Clone or download the repository.
 ```
 and
 ```
-Setup the database and create your wordpress database
+Setup the database and create your own wordpress database
 ```
 
 ## Built With
