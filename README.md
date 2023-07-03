@@ -50,11 +50,3 @@ You can just email me for system just message me in kirkmendoza9@gmail.com
 
 Project Link: [https://github.com/mickey014/leaguecoders](https://github.com/mickey014/leaguecoders)
 
-
-## Acknowledgments
-
-* My family and my love
-* Inspiration
-* Motivation
-* HardWorking
-
