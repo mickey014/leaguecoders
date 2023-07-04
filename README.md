@@ -41,7 +41,7 @@ Setup the database and create your own wordpress database
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit/) website for details
 
 ## Get in touch with me
 
