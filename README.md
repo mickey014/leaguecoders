@@ -41,12 +41,14 @@ Setup the database and create your own wordpress database
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
 
-## Contact
+## Get in touch with me
 
-Kirk Anthony Mendoza - [@hi_im_kirk](https://twitter.com/hi_im_kirk) <br>
-You can just email me for system just message me in kirkmendoza9@gmail.com
+Twitter - [@hi_im_kirk](https://twitter.com/hi_im_kirk) <br>
+Facebook - Message me on my facebook account [Kirk Anthony Mendoza](https://www.facebook.com/mickey014/) <br>
+Email - You can just email me for system just message me in kirkmendoza9@gmail.com <br>
+Contact# - Leave a message on 0930-980-0034
 
 Project Link: [https://github.com/mickey014/leaguecoders](https://github.com/mickey014/leaguecoders)
 
